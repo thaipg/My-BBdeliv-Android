@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".View.Delivery.DeliverySuccessActivity">
+
+    <item
+        android:id="@+id/action_camera"
+        android:icon="@drawable/ic_photo_camera_white_24dp"
+        android:title="Upload hình"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_mode_close_button"
+        android:icon="@drawable/ic_clear_white_24dp"
+        android:title="Clear"
+        app:showAsAction="always" />
+</menu>

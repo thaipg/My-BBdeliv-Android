@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:fancy="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:layout_weight="1"
+android:orientation="vertical"
+app:layout_behavior="@string/appbar_scrolling_view_behavior"
+tools:context="vn.dsc.mybbdeliv.View.Problem.AddIncidentsActivity"
+android:focusable="true"
+android:focusableInTouchMode="true"
+android:id="@+id/clLayout"
+tools:showIn="@layout/app_bar_add_incidents">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/txtShipmentCode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_code_black_24dp"
+            android:drawablePadding="8dp"
+            android:ems="10"
+            android:fontFamily="@font/montserrat"
+            android:hint="Mã vận đơn"
+            android:inputType="textPersonName"
+            android:textAlignment="textStart"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageView_scan_camera"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/imageView_scan_camera"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/icons8_barcode_reader_filled_50"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/txtShipmentCode"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <AutoCompleteTextView
+        android:id="@+id/txtEmployee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:selectAllOnFocus="true"
+        android:layout_marginTop="8dp"
+        android:drawableLeft="@drawable/ic_account_balance_black_24dp"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:drawablePadding="10dp"
+        android:hint="Mã nhân viên gặp sự cố"
+        android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/btSelectReason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_margin="5dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        fancy:fb_borderColor="#FFFFFF"
+        fancy:fb_borderWidth="1dp"
+        fancy:fb_defaultColor="#715039"
+        fancy:fb_focusColor="#9bd823"
+        fancy:fb_fontIconResource="&#xf0d1;"
+        fancy:fb_iconPosition="left"
+        fancy:fb_radius="0dp"
+        fancy:fb_text=" Lý do gặp sự cố"
+        fancy:fb_textColor="#FFFFFF">
+
+    </mehdi.sakout.fancybuttons.FancyButton>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout_1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@android:id/empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Chưa quét vận đơn"
+            android:visibility="gone"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:padding="8dp"
+        android:text="Ghi chú :"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/editTextNote"
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="@font/montserrat"
+        android:inputType="text"
+        android:selectAllOnFocus="true"
+        android:textAlignment="viewStart"
+        android:textSize="14sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:orientation="horizontal"
+        android:padding="8dp">
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="90dp"
+            android:layout_height="24dp"
+            android:drawablePadding="8dp"
+            android:ems="10"
+            android:fontFamily="@font/montserrat"
+            android:inputType="textPersonName"
+            android:lineSpacingExtra="10sp"
+            android:text="Hình ảnh :"
+            android:textAlignment="viewStart"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView_camera"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:scaleType="center"
+            android:src="@drawable/ic_photo_camera_black_24dp" />
+    </LinearLayout>
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:id="@+id/grid"
+        android:numColumns="2"
+        android:background="#DCDCDC"
+        android:horizontalSpacing="5dp"
+        android:verticalSpacing="5dp"
+        android:padding="10dp"
+        />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/button_background_blue"
+        android:fontFamily="@font/montserrat"
+        android:text="Cập nhật"
+        android:textColor="@color/colorWhite" />
+</LinearLayout>
+</RelativeLayout>

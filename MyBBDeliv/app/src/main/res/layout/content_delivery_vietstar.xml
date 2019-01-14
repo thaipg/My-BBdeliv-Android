@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".View.Delivery.Vietstar.DeliveryVietstarActivity"
+    tools:showIn="@layout/app_bar_delivery_vietstar"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:id="@+id/clLayout">
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="512dp"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="top"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/txtShipmentCode"
+                    style="@style/EditTextDrawableLeft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="0.8"
+                    android:drawableLeft="@drawable/ic_code_black_24dp"
+                    android:enabled="true"
+                    android:hint="Mã vận đơn"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <ImageView
+                    android:id="@+id/imageView_camera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.2"
+                    android:background="@color/colorGray"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_photo_camera_black_24dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvActualRecipient"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:layout_gravity="top"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:paddingLeft="8dp"
+                android:text="Tên người nhận :" />
+
+            <EditText
+                android:id="@+id/tfActualRecipient"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:ems="10"
+                android:fontFamily="@font/montserrat"
+                android:inputType="textPersonName"
+                android:textSize="14sp" />
+            <GridView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:id="@+id/grid"
+                android:numColumns="2"
+                android:background="#DCDCDC"
+                android:horizontalSpacing="5dp"
+                android:verticalSpacing="5dp"
+                android:padding="10dp"
+                />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btnUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/button_background_blue"
+                android:fontFamily="@font/montserrat"
+                android:text="Cập nhật"
+                android:textColor="@color/colorWhite" />
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="dsc.vn.mybbdeliv">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.GET_TASKS" />
+
+    <uses-feature android:name="android.hardware.location.gps" />
+
+    <permission
+        android:name="android.permission.FLASHLIGHT"
+        android:permissionGroup="android.permission-group.HARDWARE_CONTROLS"
+        android:protectionLevel="normal" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/main_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".Service.LocationTrackingService"
+            android:enabled="true" />
+        <service android:name=".Service.FirebaseService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".Service.FirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name=".Service.FirebaseDataReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".Service.NetworkChangeReceiver"
+            android:label=".Service.NetworkChangeReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".Service.AutoUpdateService"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+                <action android:name="android.intent.action.PACKAGE_INSTALL" />
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".View.Login.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".View.ReadyToTransit.ReadyToTransitActivity"
+            android:label="@string/title_activity_ready_to_transit"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".View.RequestReadyToTransit.RequestReadyToTransitActivity"
+            android:label="@string/title_activity_request_ready_to_transit"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!-- Shipment Pickup Reject activity -->
+        <activity
+            android:name=".View.RequestReadyToTransit.ShipmentPickupRequestRejectActivity"
+            android:label="@string/title_activity_shipment_pickup_request_reject"
+            android:parentActivityName=".View.RequestReadyToTransit.RequestReadyToTransitActivity" />
+        <activity
+            android:name=".View.ReadyToTransit.ShipmentPickupFailActivity"
+            android:label="@string/title_activity_shipment_pickup_fail"
+            android:parentActivityName=".View.ReadyToTransit.ReadyToTransitActivity" />
+        <activity
+            android:name=".View.ReadyToTransit.CreateShipment.Step1Activity"
+            android:label="@string/title_activity_step1"
+            android:parentActivityName=".View.ReadyToTransit.ReadyToTransitActivity" />
+        <activity
+            android:name=".View.ReadyToTransit.CreateShipment.Step2Activity"
+            android:label="@string/title_activity_step2" />
+        <activity
+            android:name=".View.ReadyToTransit.CreateShipment.Step3Activity"
+            android:label="@string/title_activity_step3" />
+        <activity
+            android:name=".View.ReadyToTransit.CreateShipment.Step4Activity"
+            android:label="@string/title_activity_step4" />
+        <activity
+            android:name=".View.WaitingReceive.WaitingReceiveActivity"
+            android:label="@string/title_activity_waiting_receive"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".View.Receive.ReceivedActivity"
+            android:label="@string/title_activity_received"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".View.WaitingDelivery.WaitingDeliveryActivity"
+            android:label="@string/title_activity_waiting_delivery"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".View.Delivery.DeliveryViewActivity"
+            android:label="@string/title_activity_delivery_view"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".View.Delivery.DeliverySuccessActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_delivery_success"
+            android:parentActivityName=".View.Delivery.DeliveryViewActivity" />
+        <activity
+            android:name=".View.Delivery.DeliveryFailActivity"
+            android:label="@string/title_activity_delivery_fail"
+            android:parentActivityName=".View.Delivery.DeliveryViewActivity" />
+        <activity
+            android:name=".View.Tracking.ShipmentDetailActivity"
+            android:label="@string/title_activity_shipment_detail"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".View.Maps.MapsActivity"
+            android:label="@string/title_activity_maps" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name=".View.Information.InformationActivity"
+            android:label="@string/title_activity_information"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".View.History.HistoryActivity"
+            android:label="@string/title_activity_history"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".View.RequestReadyToTransit.CreateRequestShipmentActivity"
+            android:label="@string/title_activity_create_request_shipment"
+            android:parentActivityName=".View.ReadyToTransit.ReadyToTransitActivity" />
+        <activity
+            android:name=".View.ReadyToTransit.CreateShipmentRequest.CreateShipmentRequestActivity"
+            android:label="@string/title_activity_create_shipment_request"
+            android:parentActivityName=".View.ReadyToTransit.ReadyToTransitActivity" />
+        <activity
+            android:name=".View.ReadyToTransit.CreateShipments.ListShipmentCreateActivity"
+            android:label="@string/title_activity_list_shipment_create"
+            android:parentActivityName=".View.ReadyToTransit.ReadyToTransitActivity" />
+        <activity
+            android:name=".View.ReadyToTransit.CreateShipmentFast.CreateShipmentFastActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_create_shipment_fast"
+            android:parentActivityName=".View.ReadyToTransit.ReadyToTransitActivity" />
+        <activity
+            android:name=".View.Report.ReportKeepingMoneyActivity"
+            android:label="@string/title_activity_report_keeping_money"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".View.Report.ReportActivity"
+            android:label="@string/title_activity_report"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".View.ReadyToTransit.CreateShipments.CreateDetailActivity"
+            android:label="@string/title_activity_create_detail"
+            android:parentActivityName=".View.ReadyToTransit.CreateShipments.ListShipmentCreateActivity" />
+        <activity
+            android:name=".View.Delivery.Vietstar.DeliveryVietstarActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_delivery_vietstar"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".View.ReadyToTransit.ListCreatedActivity"
+            android:label="@string/title_activity_list_created"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="vn.dsc.mybbdeliv.View.Vietstar.CheckExtraPriceActivity"
+            android:label="@string/title_activity_check_extra_price"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="vn.dsc.mybbdeliv.View.Vietstar.ShipmentDetailVietstarActivity"
+            android:label="@string/title_activity_shipment_detail_vietstar"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name="vn.dsc.mybbdeliv.View.Warehouse.InputWarehouseActivity"
+            android:label="@string/title_activity_input_warehouse"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="vn.dsc.mybbdeliv.View.Warehouse.OutputWarehouseTransferActivity"
+            android:label="@string/title_activity_output_warehouse_transfer"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="vn.dsc.mybbdeliv.View.Warehouse.OutputWarehouseDeliveryActivity"
+            android:label="@string/title_activity_output_warehouse_delivery"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="vn.dsc.mybbdeliv.View.Problem.AddDelayActivity"
+            android:label="@string/title_activity_add_delay"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="vn.dsc.mybbdeliv.View.Problem.AddIncidentsActivity"
+            android:label="@string/title_activity_add_incidents"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>

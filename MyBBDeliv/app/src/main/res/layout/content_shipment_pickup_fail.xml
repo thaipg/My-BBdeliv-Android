@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="dsc.vn.mybbdeliv.View.ReadyToTransit.ShipmentPickupFailActivity"
+    tools:showIn="@layout/activity_shipment_pickup_fail"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:id="@+id/clLayout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="512dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/tvReason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:padding="8dp"
+            android:text="Lý do :" />
+
+        <Button
+            android:id="@+id/btSelectReason"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:text="Vui lòng chọn lý do"
+            android:textAllCaps="false"
+            android:textColor="@color/colorBlue"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:padding="8dp"
+            android:text="Ghi chú :" />
+
+        <EditText
+            android:id="@+id/editTextNote"
+            style="@style/Widget.AppCompat.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:ems="10"
+            android:fontFamily="@font/montserrat"
+            android:inputType="textMultiLine"
+            android:selectAllOnFocus="true"
+            android:textAlignment="viewStart"
+            android:textSize="14sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="178dp" />
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/button_background_blue"
+            android:fontFamily="@font/montserrat"
+            android:text="Cập nhật"
+            android:textColor="@color/colorWhite" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

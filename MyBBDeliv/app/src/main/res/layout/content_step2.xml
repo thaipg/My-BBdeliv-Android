@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="dsc.vn.mybbdeliv.View.ReadyToTransit.CreateShipment.Step2Activity"
+    tools:showIn="@layout/activity_step2"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:id="@+id/clLayout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout_menu_step"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <RelativeLayout
+                    android:id="@+id/layout_step_all_icon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/layout_step_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/textView_step_1"
+                            android:layout_width="@dimen/material_stepper_step_circle"
+                            android:layout_height="@dimen/material_stepper_step_circle"
+                            android:background="@drawable/circle_grey_bg"
+                            android:gravity="center"
+                            android:text="1"
+                            android:textColor="#fff"
+                            android:textSize="@dimen/material_stepper_optional_circle_font"
+                            android:visibility="visible" />
+
+                        <ImageView
+                            android:id="@+id/imageView_step_1"
+                            android:layout_width="@dimen/material_stepper_step_circle"
+                            android:layout_height="@dimen/material_stepper_step_circle"
+                            android:background="@drawable/circle_bg"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/ic_done_white_24dp"
+                            android:visibility="gone" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:id="@+id/divider_step_1"
+                        android:layout_width="56dp"
+                        android:layout_height="@dimen/material_stepper_connector"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_toEndOf="@+id/layout_step_1"
+                        android:layout_toRightOf="@+id/layout_step_1"
+                        android:background="@android:color/darker_gray" />
+
+                    <RelativeLayout
+                        android:id="@+id/layout_step_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/divider_step_1"
+                        android:layout_toRightOf="@+id/divider_step_1">
+
+                        <TextView
+                            android:id="@+id/textView_step_2"
+                            android:layout_width="@dimen/material_stepper_step_circle"
+                            android:layout_height="@dimen/material_stepper_step_circle"
+                            android:background="@drawable/circle_grey_bg"
+                            android:gravity="center"
+                            android:text="2"
+                            android:textColor="#fff"
+                            android:textSize="@dimen/material_stepper_optional_circle_font"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/imageView_step_2"
+                            android:layout_width="@dimen/material_stepper_step_circle"
+                            android:layout_height="@dimen/material_stepper_step_circle"
+                            android:background="@drawable/circle_bg"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/ic_done_white_24dp"
+                            android:visibility="visible" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:id="@+id/divider_step_2"
+                        android:layout_width="56dp"
+                        android:layout_height="@dimen/material_stepper_connector"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_toEndOf="@+id/layout_step_2"
+                        android:layout_toRightOf="@+id/layout_step_2"
+                        android:background="@android:color/darker_gray" />
+
+                    <RelativeLayout
+                        android:id="@+id/layout_step_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/divider_step_2"
+                        android:layout_toRightOf="@+id/divider_step_2">
+
+                        <TextView
+                            android:id="@+id/textView_step_3"
+                            android:layout_width="@dimen/material_stepper_step_circle"
+                            android:layout_height="@dimen/material_stepper_step_circle"
+                            android:background="@drawable/circle_grey_bg"
+                            android:gravity="center"
+                            android:text="3"
+                            android:textColor="#fff"
+                            android:textSize="@dimen/material_stepper_optional_circle_font"
+                            android:visibility="visible" />
+
+                        <ImageView
+                            android:id="@+id/imageView_step_3"
+                            android:layout_width="@dimen/material_stepper_step_circle"
+                            android:layout_height="@dimen/material_stepper_step_circle"
+                            android:background="@drawable/circle_bg"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/ic_done_white_24dp"
+                            android:visibility="gone" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:id="@+id/divider_step_3"
+                        android:layout_width="56dp"
+                        android:layout_height="@dimen/material_stepper_connector"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_toEndOf="@+id/layout_step_3"
+                        android:layout_toRightOf="@+id/layout_step_3"
+                        android:background="@android:color/darker_gray" />
+
+                    <RelativeLayout
+                        android:id="@+id/layout_step_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/divider_step_3"
+                        android:layout_toRightOf="@+id/divider_step_3">
+
+                        <TextView
+                            android:id="@+id/textView_step_4"
+                            android:layout_width="@dimen/material_stepper_step_circle"
+                            android:layout_height="@dimen/material_stepper_step_circle"
+                            android:background="@drawable/circle_grey_bg"
+                            android:gravity="center"
+                            android:text="4"
+                            android:textColor="#fff"
+                            android:textSize="@dimen/material_stepper_optional_circle_font"
+                            android:visibility="visible" />
+
+                        <ImageView
+                            android:id="@+id/imageView_step_4"
+                            android:layout_width="@dimen/material_stepper_step_circle"
+                            android:layout_height="@dimen/material_stepper_step_circle"
+                            android:background="@drawable/circle_bg"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/ic_done_white_24dp"
+                            android:visibility="gone" />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layout_step_all_icon"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight=".25"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView_title_step_1_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:alpha=".50"
+                            android:fontFamily="@font/montserrat"
+                            android:text="1. Địa chỉ"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/textView_title_step_1_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:alpha=".50"
+                            android:fontFamily="@font/montserrat"
+                            android:text="người gửi"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight=".25"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView_title_step_2_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:alpha=".50"
+                            android:fontFamily="@font/montserrat"
+                            android:text="2. Địa chỉ"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/textView_title_step_2_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:alpha=".50"
+                            android:fontFamily="@font/montserrat"
+                            android:text="người nhận"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight=".25"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView_title_step_3_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:alpha=".50"
+                            android:fontFamily="@font/montserrat"
+                            android:text="3. Thông tin"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/textView_title_step_3_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:alpha=".50"
+                            android:fontFamily="@font/montserrat"
+                            android:text="hàng hoá"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight=".25"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView_title_step_4_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:alpha=".5"
+                            android:fontFamily="@font/montserrat"
+                            android:text="4. Hoàn tất"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="8dp"
+                android:layout_below="@+id/relativeLayout_menu_step">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="8dp">
+
+                    <EditText
+                        android:id="@+id/txtName"
+                        style="@style/EditTextDrawableLeft"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="8dp"
+                        android:drawableLeft="@drawable/ic_person_pin_black_24dp"
+                        android:hint="Họ tên (*)"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    <EditText
+                        android:id="@+id/txtCompany"
+                        style="@style/EditTextDrawableLeft"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="8dp"
+                        android:drawableLeft="@drawable/ic_person_pin_black_24dp"
+                        android:hint="Tên công ty"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    <EditText
+                        android:id="@+id/txtPhone"
+                        style="@style/EditTextDrawableLeft"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="8dp"
+                        android:drawableLeft="@drawable/ic_phone_black_24dp"
+                        android:hint="Điện thoại (*)"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    <TextView
+                        android:id="@+id/txtAddress"
+                        style="@style/EditTextDrawableLeft"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="8dp"
+                        android:background="?attr/editTextBackground"
+                        android:drawableLeft="@drawable/ic_location_on_black_24dp"
+                        android:hint="Địa chỉ (*)"
+                        android:inputType="text"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="?attr/editTextColor" />
+
+                    <EditText
+                        android:id="@+id/txtAddressNote"
+                        style="@style/EditTextDrawableLeft"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="8dp"
+                        android:background="?attr/editTextBackground"
+                        android:drawableLeft="@drawable/ic_location_on_black_24dp"
+                        android:hint="Địa chỉ chi tiết"
+                        android:inputType="text"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="?attr/editTextColor" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Tỉnh/thành"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btProvince"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/editTextBackground"
+                        android:drawableRight="@drawable/ic_chevron_right_black_24dp"
+                        android:gravity="center_vertical"
+                        android:hint="@string/hint_state"
+                        android:padding="8dp"
+                        android:singleLine="true"
+                        android:textAllCaps="false"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="?attr/editTextColor" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Quận/huyện"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btDistrict"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/editTextBackground"
+                        android:drawableRight="@drawable/ic_chevron_right_black_24dp"
+                        android:gravity="center_vertical"
+                        android:hint="@string/hint_state"
+                        android:padding="8dp"
+                        android:singleLine="true"
+                        android:textAllCaps="false"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="?attr/editTextColor" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Phường xã"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btWard"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/editTextBackground"
+                        android:drawableRight="@drawable/ic_chevron_right_black_24dp"
+                        android:gravity="center_vertical"
+                        android:hint="@string/hint_state"
+                        android:padding="8dp"
+                        android:singleLine="true"
+                        android:textAllCaps="false"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="?attr/editTextColor" />
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp" />
+
+                    <Button
+                        android:id="@+id/btnNext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/button_background_blue"
+                        android:fontFamily="@font/montserrat"
+                        android:text="TIẾP THEO"
+                        android:textColor="@color/colorWhite" />
+                </LinearLayout>
+
+            </ScrollView>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

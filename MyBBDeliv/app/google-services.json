@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "244577985652",
+    "firebase_url": "https://vietstar-project.firebaseio.com",
+    "project_id": "vietstar-project",
+    "storage_bucket": "vietstar-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:244577985652:android:a098df33b5eda185",
+        "android_client_info": {
+          "package_name": "dsc.vn.mybbdeliv"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "244577985652-tng0d1mt7t9hlskknu6v38eivmohqv8o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "dsc.vn.mybbdeliv",
+            "certificate_hash": "b65196f1d5030bec2298beeb095979fdbbb822a6"
+          }
+        },
+        {
+          "client_id": "244577985652-3vq3vbpinp3hua0qhthj8v77a75ih5dm.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "244577985652-3vq3vbpinp3hua0qhthj8v77a75ih5dm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlLmJmqS0LgRK0p1qsrGfarVTdYCK9QwY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "244577985652-3vq3vbpinp3hua0qhthj8v77a75ih5dm.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "244577985652-icjsc9gidibhr6n5v9hhdhg3j4mroc54.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "dsc.vn.mybbdeliv",
+                "app_store_id": "1328153621"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

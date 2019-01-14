@@ -1,0 +1,748 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".View.ReadyToTransit.CreateShipment.Step4Activity"
+    tools:showIn="@layout/activity_step4"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:id="@+id/clLayout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+            android:id="@+id/relativeLayout_menu_step"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <RelativeLayout
+                android:id="@+id/layout_step_all_icon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/layout_step_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textView_step_1"
+                        android:layout_width="@dimen/material_stepper_step_circle"
+                        android:layout_height="@dimen/material_stepper_step_circle"
+                        android:background="@drawable/circle_grey_bg"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/material_stepper_optional_circle_font"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:id="@+id/imageView_step_1"
+                        android:layout_width="@dimen/material_stepper_step_circle"
+                        android:layout_height="@dimen/material_stepper_step_circle"
+                        android:background="@drawable/circle_bg"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_done_white_24dp"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/divider_step_1"
+                    android:layout_width="56dp"
+                    android:layout_height="@dimen/material_stepper_connector"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_toEndOf="@+id/layout_step_1"
+                    android:layout_toRightOf="@+id/layout_step_1"
+                    android:background="@android:color/darker_gray" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_step_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/divider_step_1"
+                    android:layout_toRightOf="@+id/divider_step_1">
+
+                    <TextView
+                        android:id="@+id/textView_step_2"
+                        android:layout_width="@dimen/material_stepper_step_circle"
+                        android:layout_height="@dimen/material_stepper_step_circle"
+                        android:background="@drawable/circle_grey_bg"
+                        android:gravity="center"
+                        android:text="2"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/material_stepper_optional_circle_font"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:id="@+id/imageView_step_2"
+                        android:layout_width="@dimen/material_stepper_step_circle"
+                        android:layout_height="@dimen/material_stepper_step_circle"
+                        android:background="@drawable/circle_bg"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_done_white_24dp"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/divider_step_2"
+                    android:layout_width="56dp"
+                    android:layout_height="@dimen/material_stepper_connector"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_toEndOf="@+id/layout_step_2"
+                    android:layout_toRightOf="@+id/layout_step_2"
+                    android:background="@android:color/darker_gray" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_step_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/divider_step_2"
+                    android:layout_toRightOf="@+id/divider_step_2">
+
+                    <TextView
+                        android:id="@+id/textView_step_3"
+                        android:layout_width="@dimen/material_stepper_step_circle"
+                        android:layout_height="@dimen/material_stepper_step_circle"
+                        android:background="@drawable/circle_grey_bg"
+                        android:gravity="center"
+                        android:text="3"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/material_stepper_optional_circle_font"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:id="@+id/imageView_step_3"
+                        android:layout_width="@dimen/material_stepper_step_circle"
+                        android:layout_height="@dimen/material_stepper_step_circle"
+                        android:background="@drawable/circle_bg"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_done_white_24dp"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/divider_step_3"
+                    android:layout_width="56dp"
+                    android:layout_height="@dimen/material_stepper_connector"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_toEndOf="@+id/layout_step_3"
+                    android:layout_toRightOf="@+id/layout_step_3"
+                    android:background="@android:color/darker_gray" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_step_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/divider_step_3"
+                    android:layout_toRightOf="@+id/divider_step_3">
+
+                    <TextView
+                        android:id="@+id/textView_step_4"
+                        android:layout_width="@dimen/material_stepper_step_circle"
+                        android:layout_height="@dimen/material_stepper_step_circle"
+                        android:background="@drawable/circle_grey_bg"
+                        android:gravity="center"
+                        android:text="4"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/material_stepper_optional_circle_font"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/imageView_step_4"
+                        android:layout_width="@dimen/material_stepper_step_circle"
+                        android:layout_height="@dimen/material_stepper_step_circle"
+                        android:background="@drawable/circle_bg"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_done_white_24dp"
+                        android:visibility="visible" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_step_all_icon"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight=".25"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView_title_step_1_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:alpha=".50"
+                        android:fontFamily="@font/montserrat"
+                        android:text="1. Địa chỉ"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/textView_title_step_1_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:alpha=".50"
+                        android:fontFamily="@font/montserrat"
+                        android:text="người gửi"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight=".25"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView_title_step_2_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:alpha=".50"
+                        android:fontFamily="@font/montserrat"
+                        android:text="2. Địa chỉ"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/textView_title_step_2_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:alpha=".50"
+                        android:fontFamily="@font/montserrat"
+                        android:text="người nhận"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight=".25"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView_title_step_3_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:alpha=".50"
+                        android:fontFamily="@font/montserrat"
+                        android:text="3. Thông tin"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/textView_title_step_3_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:alpha=".50"
+                        android:fontFamily="@font/montserrat"
+                        android:text="hàng hoá"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight=".25"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView_title_step_4_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:alpha=".5"
+                        android:fontFamily="@font/montserrat"
+                        android:text="4. Hoàn tất"
+                        android:textColor="@color/colorBlack"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+            <ScrollView
+                android:id="@+id/scrollView1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/relativeLayout_menu_step">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/layout_card_view_brown_dark"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="@color/colorGrey" />
+
+                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Địa chỉ người nhận"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/colorGreyAndroid" />
+
+                            <TextView
+                                android:id="@+id/lblAddressTo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/layout_card_view_brown_dark"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="@color/colorGrey" />
+
+                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Thông tin hàng hoá"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/colorGreyAndroid" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Dịch vụ: "
+                                    android:textColor="@color/colorGreyAndroid"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/lblService"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Trọng lượng: "
+                                    android:textColor="@color/colorGreyAndroid"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/lblWeight"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=" gram" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Thu hộ: "
+                                    android:textColor="@color/colorGreyAndroid"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/textView_cod"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=" đ" />
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Hình thức thanh toán: "
+                                    android:textColor="@color/colorGreyAndroid"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/textView_typePay"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="" />
+                            </LinearLayout>
+
+                            <TableLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TableRow>
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".2"
+                                        android:text="Ghi chú: "
+                                        android:textColor="@color/colorGreyAndroid"
+                                        android:textStyle="bold" />
+
+                                    <EditText
+                                        android:id="@+id/txtNote"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".8"
+                                        android:background="@drawable/edittext_border"
+                                        android:gravity="top"
+                                        android:hint="Ghi chú"
+                                        android:lines="4"
+                                        android:padding="5dp"
+                                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+                                </TableRow>
+                            </TableLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/layout_card_view_brown_dark"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="@color/colorGrey" />
+
+                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+
+                            <EditText
+                                android:id="@+id/editText_shipment_time_expect"
+                                style="@style/EditTextDrawableLeft"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawableLeft="@drawable/ic_access_time_black_24dp"
+                                android:enabled="false"
+                                android:hint="Dự kiến giao"
+                                android:text="Dự kiến giao: "
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="@color/colorGreyAndroid" />
+
+                            <TableLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="5dp">
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:paddingBottom="5dp"
+                                    android:paddingTop="5dp">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".5"
+                                        android:text="Cước chính"
+                                        android:textStyle="bold" />
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".5"
+                                        android:gravity="right"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/lblPhiVanChuyen"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="0"
+                                            android:textColor="@color/colorGreyAndroid"
+                                            android:textStyle="bold" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text=" VNĐ"
+                                            android:textColor="@color/colorGreyAndroid"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:paddingBottom="5dp"
+                                    android:paddingTop="5dp">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".5"
+                                        android:text="Phí dịch vụ gia tăng"
+                                        android:textStyle="bold" />
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".5"
+                                        android:gravity="right"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/lblPhiDVGT"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="0"
+                                            android:textColor="@color/colorGreyAndroid"
+                                            android:textStyle="bold" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text=" VNĐ"
+                                            android:textColor="@color/colorGreyAndroid"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:paddingBottom="5dp"
+                                    android:paddingTop="5dp">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".5"
+                                        android:text="Phụ phí xăng dầu"
+                                        android:textStyle="bold" />
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".5"
+                                        android:gravity="right"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/lblPPXD"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="0"
+                                            android:textColor="@color/colorGreyAndroid"
+                                            android:textStyle="bold" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text=" VNĐ"
+                                            android:textColor="@color/colorGreyAndroid"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:paddingBottom="5dp"
+                                    android:paddingTop="5dp">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".5"
+                                        android:text="VAT"
+                                        android:textStyle="bold" />
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".5"
+                                        android:gravity="right"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/lblVat"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="0"
+                                            android:textColor="@color/colorGreyAndroid"
+                                            android:textStyle="bold" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text=" VNĐ"
+                                            android:textColor="@color/colorGreyAndroid"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
+                                </TableRow>
+                            </TableLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:background="@color/colorPrimaryDark" />
+
+                            <TableLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:paddingBottom="5dp"
+                                    android:paddingTop="5dp">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".4"
+                                        android:text="Tổng cộng"
+                                        android:textStyle="bold" />
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight=".6"
+                                        android:gravity="right"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/lblTongCong"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="0"
+                                            android:textColor="@color/colorGreyAndroid"
+                                            android:textStyle="bold" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text=" VNĐ"
+                                            android:textColor="@color/colorGreyAndroid"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
+                                </TableRow>
+                            </TableLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <Button
+                        android:id="@+id/btnNext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/button_background_blue"
+                        android:fontFamily="@font/montserrat"
+                        android:text="HOÀN TẤT"
+                        android:textColor="@color/colorWhite" />
+                </LinearLayout>
+
+            </ScrollView>
+
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

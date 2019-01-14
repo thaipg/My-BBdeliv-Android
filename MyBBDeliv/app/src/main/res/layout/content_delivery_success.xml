@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="dsc.vn.mybbdeliv.View.Delivery.DeliverySuccessActivity"
+    tools:showIn="@layout/activity_delivery_success"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:id="@+id/clLayout">
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="512dp"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <TextView
+                android:id="@+id/tvActualRecipient"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:paddingLeft="8dp"
+                android:paddingTop="8dp"
+                android:text="Tên người nhận :" />
+
+            <EditText
+                android:id="@+id/tfActualRecipient"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="@font/montserrat"
+                android:inputType="textPersonName"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvNote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:paddingLeft="8dp"
+                android:paddingTop="8dp"
+                android:text="Ghi chú :" />
+
+            <EditText
+                android:id="@+id/editTextNote"
+                style="@style/Widget.AppCompat.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="@font/montserrat"
+                android:inputType="textMultiLine"
+                android:selectAllOnFocus="true"
+                android:textAlignment="viewStart"
+                android:textSize="14sp" />
+
+            <GridView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:id="@+id/grid"
+                android:numColumns="2"
+                android:background="#DCDCDC"
+                android:horizontalSpacing="5dp"
+                android:verticalSpacing="5dp"
+                android:padding="10dp"
+                />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btnUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/button_background_blue"
+                android:fontFamily="@font/montserrat"
+                android:text="Cập nhật"
+                android:textColor="@color/colorWhite" />
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

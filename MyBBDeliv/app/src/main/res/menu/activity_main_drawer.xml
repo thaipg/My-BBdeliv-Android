@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_search"
+            android:icon="@drawable/ic_search_white_24px"
+            android:title="Tra cứu"/>
+        <item
+            android:id="@+id/nav_list_created"
+            app:actionViewClass="android.widget.TextView"
+            android:icon="@drawable/ic_add_white"
+            android:title="Tạo đơn hàng" />
+        <item
+            android:id="@+id/nav_requestreadytotransit"
+            app:actionViewClass="android.widget.TextView"
+            android:icon="@drawable/ic_location_on_white_24px"
+            android:title="Yêu cầu lấy hàng" />
+        <item
+            android:id="@+id/nav_readytotransit"
+            app:actionViewClass="android.widget.TextView"
+            android:icon="@drawable/ic_location_on_white_24px"
+            android:title="Lấy hàng" />
+        <item
+            android:id="@+id/nav_hangchochungchuyen"
+            app:actionViewClass="android.widget.TextView"
+            android:icon="@drawable/ic_settings_ethernet_white_24px"
+            android:title="Hàng chờ trung chuyển" />
+        <item
+            android:id="@+id/nav_dangtrungchuyen"
+            app:actionViewClass="android.widget.TextView"
+            android:icon="@drawable/ic_settings_ethernet_white_24px"
+            android:title="Đang trung chuyển" />
+        <item
+            android:id="@+id/nav_chogiaohang"
+            app:actionViewClass="android.widget.TextView"
+            android:icon="@drawable/ic_assignment_white_24px"
+            android:title="Chờ giao hàng" />
+        <item
+            android:id="@+id/nav_danggiaohang"
+            app:actionViewClass="android.widget.TextView"
+            android:icon="@drawable/ic_flight_takeoff_white_24px"
+            android:title="Đang giao hàng" />
+        <item
+            android:id="@+id/nav_danggiaohang_vietstar"
+            app:actionViewClass="android.widget.TextView"
+            android:icon="@drawable/ic_flight_takeoff_white_24px"
+            android:title="Phát hàng Vietstar" />
+        <item
+            android:id="@+id/nav_input_warehouse"
+            app:actionViewClass="android.widget.TextView"
+            android:icon="@drawable/ic_flight_takeoff_white_24px"
+            android:title="Nhập kho" />
+        <item
+            android:id="@+id/nav_output_warehouse_transfer"
+            app:actionViewClass="android.widget.TextView"
+            android:icon="@drawable/ic_flight_takeoff_white_24px"
+            android:title="Xuất kho trung chuyển" />
+
+        <item
+            android:id="@+id/nav_output_warehouse_delivery"
+            app:actionViewClass="android.widget.TextView"
+            android:icon="@drawable/ic_flight_takeoff_white_24px"
+            android:title="Xuất kho giao hàng" />
+
+        <item
+            android:id="@+id/nav_add_delay"
+            app:actionViewClass="android.widget.TextView"
+            android:icon="@drawable/ic_flight_takeoff_white_24px"
+            android:title="Báo delay" />
+        <item
+            android:id="@+id/nav_add_incidents"
+            app:actionViewClass="android.widget.TextView"
+            android:icon="@drawable/ic_flight_takeoff_white_24px"
+            android:title="Báo sự cố" />
+        <item
+            android:id="@+id/nav_baocao_giutien"
+            android:icon="@drawable/ic_attach_money_white_24dp"
+            android:title="Tiền đang giữ" />
+        <item
+            android:id="@+id/nav_baocao"
+            android:icon="@drawable/ic_event_white_24px"
+            android:title="Báo cáo" />
+        <item
+            android:id="@+id/nav_kiemtraphuphi"
+            android:icon="@drawable/ic_event_white_24px"
+            android:title="Kiểm tra phí vùng sâu vùng xa" />
+    </group>
+    <group>
+        <item android:title=""  />
+    </group>
+    <group>
+        <item
+            android:id="@+id/nav_information"
+            android:icon="@drawable/ic_person_outline_black_24dp"
+            android:title="Thông tin" />
+        <item
+            android:id="@+id/nav_signout"
+            android:icon="@drawable/ic_lock_white_24dp"
+            android:title="Thoát" />
+    </group>
+</menu>

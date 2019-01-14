@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="dsc.vn.mybbdeliv.View.Delivery.DeliveryViewActivity"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:showIn="@layout/app_bar_delivery_view">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <SearchView
+            android:id="@+id/searchViewContentDelivery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@android:id/empty"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Không tìm thấy đơn hàng cần giao"
+                android:visibility="gone"
+                tools:ignore="HardcodedText" />
+
+            <ListView
+                android:id="@+id/listView_delivery"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:focusable="false"
+                android:focusableInTouchMode="false">
+
+            </ListView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvFooter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/montserrat"
+                android:padding="5dp"
+                android:text="Số lượng vận đơn : 0 - Vận đơn đã chọn : 0"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/btDeliverySuccess"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_weight=".35"
+                    android:gravity="center"
+                    android:src="@drawable/success"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:id="@+id/btDeliveryFail"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight=".35"
+                    android:src="@drawable/fail"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:id="@+id/btDeliveryAccident"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_weight=".35"
+                    android:gravity="center"
+                    android:src="@drawable/accident"
+                    tools:ignore="ContentDescription" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/txtSuccess"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".35"
+                    android:text="GIAO TC"
+                    android:textAlignment="center"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/txtFail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".35"
+                    android:text="GIAO KTC"
+                    android:textAlignment="center"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/txtAccident"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".35"
+                    android:text="SỰ CỐ"
+                    android:textAlignment="center"
+                    tools:ignore="HardcodedText" />
+            </TableRow>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

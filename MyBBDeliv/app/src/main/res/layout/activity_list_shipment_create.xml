@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.ReadyToTransit.CreateShipments.ListShipmentCreateActivity">
+
+    <include layout="@layout/content_list_shipment_create" />
+
+</android.support.design.widget.CoordinatorLayout>
